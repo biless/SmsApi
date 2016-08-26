@@ -6,7 +6,7 @@ const Router = require('koa-router');
 const router = new Router();
 
 router.get("/user/:system/:arch/", ctx => {
-    ctx.body = "hello User";
+    ctx.body = { token: ""};
 });
 
 module.exports = router.routes();
